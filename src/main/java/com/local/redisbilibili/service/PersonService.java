@@ -1,10 +1,18 @@
 package com.local.redisbilibili.service;
 
-import com.baomidou.mybatisplus.service.IService;
+import com.local.redisbilibili.dao.PersonMapper;
 import com.local.redisbilibili.entity.Person;
 import org.springframework.stereotype.Service;
 
-@Service
-public interface PersonService extends IService<Person> {
+import javax.annotation.Resource;
 
+@Service
+public class PersonService {
+
+    @Resource
+    private PersonMapper personMapper;
+
+    public Person getById(String id) {
+        return personMapper.selectById(id);
+    }
 }
