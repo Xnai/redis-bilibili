@@ -1,4 +1,4 @@
-package com.local.redisbilibili.util;
+package com.local.redisbilibili.utils;
 
 import lombok.Data;
 

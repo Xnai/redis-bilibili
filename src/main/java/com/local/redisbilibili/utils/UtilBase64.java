@@ -1,4 +1,4 @@
-package com.local.redisbilibili.util;
+package com.local.redisbilibili.utils;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;

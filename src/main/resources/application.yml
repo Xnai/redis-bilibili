@@ -31,3 +31,9 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 自定义的布隆过滤器的参数设定
+bloom:
+  filter:
+    expectedInsertions: 1000 # 预计插入量
+    fpp: 0.001F # 容错率

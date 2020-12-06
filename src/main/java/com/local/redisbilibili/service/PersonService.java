@@ -5,6 +5,7 @@ import com.local.redisbilibili.entity.Person;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
 public class PersonService {
@@ -14,5 +15,13 @@ public class PersonService {
 
     public Person getById(String id) {
         return personMapper.selectById(id);
+    }
+
+    public List<Person> list() {
+        return personMapper.selectList(null);
+    }
+
+    public List<String> getAllIds() {
+        return personMapper.getAllIds();
     }
 }

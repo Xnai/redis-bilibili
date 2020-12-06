@@ -52,4 +52,7 @@ public class RedisService {
     }
 
 
+    public void setItemStr(String key, String value, long expire, TimeUnit unit) {
+        valOpsStr.set(key, value, expire, unit);
+    }
 }
